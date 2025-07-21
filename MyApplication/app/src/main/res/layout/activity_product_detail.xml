@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    tools:context=".ProductDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Tên hãng -->
+        <TextView
+            android:id="@+id/txtTenHang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên hãng"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#2C2C2C"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Ảnh sản phẩm -->
+        <ImageView
+            android:id="@+id/imgSanPham"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/preview"
+             />
+
+        <!-- Nút yêu thích -->
+        <ImageView
+            android:id="@+id/btnFavorite"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_heart_border"
+            android:layout_gravity="end"
+            android:layout_marginBottom="12dp"
+            android:contentDescription="Yêu thích"
+            android:padding="4dp" />
+
+        <!-- Rating -->
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:rating="4.0"
+            android:isIndicator="true"
+            android:layout_gravity="start"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Mô tả -->
+        <TextView
+            android:id="@+id/txtMoTa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mô tả chi tiết về sản phẩm sẽ hiển thị ở đây..."
+            android:textSize="16sp"
+            android:textColor="#444444"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Giá -->
+        <TextView
+            android:id="@+id/txtGia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giá: 0đ"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#E53935"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Nút thêm vào giỏ -->
+        <Button
+            android:id="@+id/btnThemVaoGio"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="🛒 Thêm vào giỏ hàng"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:backgroundTint="#4CAF50"
+            android:elevation="4dp"
+            android:layout_marginTop="12dp" />
+
+    </LinearLayout>
+</ScrollView>
